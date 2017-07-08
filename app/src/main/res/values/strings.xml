@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="search">Search</string>
+    <string name="search_prompt">Search Pokemon</string>
+    <string name="search_hint">Pokemon Name</string>
+
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="types">Types:</string>
+
+    <string name="history">History</string>
+</resources>

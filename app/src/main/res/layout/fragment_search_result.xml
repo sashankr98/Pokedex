@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sashank.pokedex.SearchResultFragment">
+
+
+    <TextView
+        android:id="@+id/search_result_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/search_result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/search_result_id"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"/>
+    
+    <ImageView
+        android:id="@+id/sprite"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_below="@id/search_result_id"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sprite"
+        android:layout_alignStart="@id/sprite"
+        android:layout_margin="8dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/height_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sprite"
+        android:layout_toEndOf="@id/height"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height"
+        android:layout_alignStart="@id/sprite"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/weight_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/weight"
+        android:layout_below="@id/height_value"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/types"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight"
+        android:layout_alignStart="@id/sprite"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/types_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/types"
+        android:layout_below="@id/weight_value"
+        android:layout_margin="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
